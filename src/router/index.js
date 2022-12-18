@@ -15,8 +15,8 @@ const routes = [
     component: () => import('@/views/RegisterView.vue')
   },
   {
-    path: '/detail=record',
-    name: 'detailrecord',
+    path: '/detail/:id',
+    name: 'detail',
     meta: { layout: 'main' },
     component: () => import('@/views/DetailRecordView.vue')
   },
@@ -27,7 +27,7 @@ const routes = [
     component: () => import('@/views/HistoryView.vue')
   },
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     meta: { layout: 'main' },
     component: () => import('@/views/HomeView.vue')
